@@ -1,0 +1,18 @@
+const arrayDiff = require('./ArrayDiff');
+describe('Suite for Array Differences', () => {
+  test('a was [], b was [4,5]', () => {
+    expect(arrayDiff([], [4, 5])).toEqual([]);
+  });
+
+  test('a was [3,4], b was [3]', () => {
+    expect(arrayDiff([3, 4], [3])).toEqual([4]);
+  });
+
+  test('a was [1,8,2], b was []', () => {
+    expect(arrayDiff([1, 8, 2], [])).toEqual([1, 8, 2]);
+  });
+
+  test('a was [1,2,3], b was [1,2]', () => {
+    expect(arrayDiff([1, 2, 3], [1, 2])).toEqual([3]);
+  });
+});
