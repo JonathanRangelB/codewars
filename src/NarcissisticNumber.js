@@ -24,4 +24,14 @@ function narcissistic(value) {
   );
 }
 
-module.exports = narcissistic;
+function narcissistic2(value) {
+  return (
+    value ===
+    value
+      .toString()
+      .split('')
+      .reduce((acc, cur) => +acc + Math.pow(+cur, value.toString().length), 0)
+  );
+}
+
+module.exports = { narcissistic, narcissistic2 };
