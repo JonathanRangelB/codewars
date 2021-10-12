@@ -4,7 +4,8 @@
   "description": "",
   "main": "flattenAndSortAnArray.js",
   "scripts": {
-    "test": "jest -o"
+    "test": "jest -o",
+    "test:cov": "jest --coverage"
   },
   "keywords": [],
   "author": "",
